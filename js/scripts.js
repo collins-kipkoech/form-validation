@@ -1,0 +1,17 @@
+$(document).ready(function(){
+  $("h1").click(function(){
+    alert("header");
+  });
+  $("#firstp").click(function(){
+    $("p").hide("slow");
+  });
+  $("#secondp").dblclick(function(){
+    $("p").hide();
+  });
+  $("button").click(function(){
+    $("p").toggle();
+  });
+  $("p").click(function(){
+    $("this").fadeIn();
+  });
+});
