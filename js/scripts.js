@@ -14,4 +14,8 @@ $(document).ready(function(){
   $("p").click(function(){
     $("this").fadeIn();
   });
+  $("#flip").click(function(){
+    $("#panel").slideUp("slow");
+    
+  });
 });
