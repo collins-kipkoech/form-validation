@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="/action_page.php" target="_self" method="POST" onsubmit="return validate()" name="myForm">
+        <fieldset>
+            <legend>personal details:</legend>
+            <label for="fname">Firstname:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            
+            <label for="lname">Lastname:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label><br>
+        </fieldset>
+        <input type="checkbox" id="moringa" name="school" value="moringa">
+        <label for="moringa">moringa</label><br>
+        <input type="checkbox" id="moringa" name="school" value="alliance">
+        <label for="aliance">aliance</label><br>
+        <label for="cars">Select your car:</label>
+        <select name="car" id="cars">
+            <option value="volvo">volvo</option>
+            <option value="benz">benz</option>
+            <option value="vitz">vitz</option>
+            <option value="brado">brado</option>
+            <option value="subaru">subaru</option>
+        </select><br>
+        <input list="cars">
+        <datalist id="cars">
+            <option value="volvo">
+            <option value="subaru">
+            <option value="vitz">
+            <option value="brado">
+            <option value="harrier">
+        </datalist><br>
+        <label for="todayDate">Date:</label>
+        <input type="date" id="todayDate" name="Birthday"><br>
+        <input type="month" id="month" value="month" name="month" min="1" max="31" size="2" required><br>
+        <label for="myfile">choose your file:</label>
+        <input type="file" id="myfile" name="file" multiple><br>
+        <label for="phone">Input Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g 0715023823" pattern="[0-9]{10}" required autocomplete="on"><br>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="2" min="2" max="10"><br>
+        <!--<input type="image" src="./images/submit.jpeg" height="50px" width="80px"><br>-->
+    
+        <input type="submit" id="submit" name="submit" value="submit"><br>
+        <!--<button type="button" name="submit" onclick="alert('hello world')">click here</button>-->
+    
+    
+    </form>
+    <script src="formvalidation.js"></script>
+    
+</body>
+</html>
